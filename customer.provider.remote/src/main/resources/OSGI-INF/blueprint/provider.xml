@@ -10,7 +10,7 @@
   ">
 
 	
-        <service id="customerService" ref="customServiceClient" interface="com.example.customerservice.CustomerService" />
+	<reference id="customerService" interface="com.example.customerservice.CustomerService" />
 
 	<jaxws:endpoint xmlns:tns="http://customerservice.example.com/"
 		implementor="#customerService" endpointName="tns:CustomerServiceEndpoint"
